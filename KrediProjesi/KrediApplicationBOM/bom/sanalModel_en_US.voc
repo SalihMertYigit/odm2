@@ -1,0 +1,9 @@
+# Vocabulary Properties
+uuid = 089dbe4d-01e4-4f74-9eab-42cf30353987
+
+# MusteriSeviyesiDomain
+MusteriSeviyesiDomain#concept.label = MusteriSeviyesiDomain
+MusteriSeviyesiDomain.BRONZ#instance.label = Bronz
+MusteriSeviyesiDomain.GOLD#instance.label = Gold
+MusteriSeviyesiDomain.PLATINIUM#instance.label = Platinium
+MusteriSeviyesiDomain.SILVER#instance.label = Silver

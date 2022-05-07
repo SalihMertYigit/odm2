@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ToplamHarcamaHesaplama</name>
+  <uuid>48e2570e-aa21-4b99-9942-cc0f650ff845</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set harcama to a number in the harcamalars of the musteri bilgileri of krediRequest ;
+if
+    harcama is more than 0
+then
+    set toplamHarcamTutari to harcama + toplamHarcamTutari ;
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>YasOnay</name>
+  <uuid>bb752c6b-ea7e-4e5e-8ae7-e369a23d3164</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the yas of the musteri bilgileri of krediRequest is less than 18
+then
+make it false that krediResponse is kredi onaylandi mi ;
+set the mesaj of krediResponse to "yasınız 18 den kucuktur." ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

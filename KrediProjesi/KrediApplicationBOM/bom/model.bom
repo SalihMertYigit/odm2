@@ -1,0 +1,52 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/KrediApplicationBOM//KrediApplication"
+property uuid "6fd7de27-c8f1-4118-9c12-0c56f578de2c"
+package Model;
+
+
+public class KartBilgileri
+{
+    public int kartBakiyesi;
+    public int kartLimit;
+    public string kartTuru;
+    public KartBilgileri();
+}
+
+public class KrediRequest
+{
+    public boolean kartTalebiVarMi;
+    public Model.Musteri musteriBilgileri;
+    public KrediRequest();
+}
+
+public class KrediResponse
+{
+    public string krediKartiTuru;
+    public boolean krediOnaylandiMi;
+    public string mesaj;
+    public int musteriSeviyesi;
+    public MusteriSeviyesiDomain musteriSeviyesiSanal;
+    public int odenecekTutar;
+    public int onaylananKartLimiti;
+    public int onaylananTutar;
+    public KrediResponse();
+}
+
+public class Musteri
+{
+    public string ad;
+    public boolean calisiyorMu;
+    public java.util.List harcamalar domain 0,* class java.lang.Integer;
+    public int krediMiktari;
+    public int krediSkoru;
+    public int maas;
+    public java.util.List musteriKartlari domain 0,* class Model.KartBilgileri;
+    public boolean odemeDuzenliMi;
+    public string soyad;
+    public int tckn;
+    public int vadetalep;
+    public int yas;
+    public Musteri();
+}
+

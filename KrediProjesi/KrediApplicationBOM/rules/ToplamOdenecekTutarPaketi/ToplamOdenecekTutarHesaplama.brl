@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ToplamOdenecekTutarHesaplama</name>
+  <uuid>109b0fc4-1790-40bc-b9e7-79244d380297</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if krediResponse is kredi onaylandi mi is true
+then 
+set the odenecek tutar of krediResponse to the kredi miktari of the musteri bilgileri of krediRequest * vadeKatsayisi;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
